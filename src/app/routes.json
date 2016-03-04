@@ -1,0 +1,14 @@
+[
+  {
+    "stateName": "view1",
+    "urlPrefix": "/view1",
+    "type": "load",
+    "src": "app/view1/view1"
+  },
+  {
+    "stateName": "view2",
+    "urlPrefix": "/view2",
+    "type": "load",
+    "src": "app/view2/view2"
+  }
+]

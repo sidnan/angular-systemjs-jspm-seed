@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-framework="angularjs">
+<head>
+  <meta charset=" utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="width = device-width, minimal-ui, initial-scale = 1, user-scalable = no" />
+  <meta name="apple-mobile-web-app-title" content="PoC App">
+  <title>angular-systemjs-jspm-seed</title>
+  <base href="/">
+</head>
+<body ng-cloak>
+
+  <noscript>
+    <div class="deprecation-warning">
+      <h1>Please enable Javascript</h1>
+      <p>This application requires your browser to have Javascript enabled.
+        <a href="http://enable-javascript.com" target="_blank">Learn more</a></p>
+      </div>
+    </noscript>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://github.com/sidnan/angular-systemjs-jspm-seed">angular-systemjs-jspm-seed</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a ui-sref="view1" href="#">Home</a></li>
+            <li><a ui-sref="view2" href="#">View 2</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+
+      <div class="row my-row">
+        <div class="col-md-10 col-center-block">
+          <ui-view class="content-area" ></ui-view>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- build:dev -->
+    <script src="jspm_packages/system.js"></script>
+    <script src="system.config.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:prod -->
+    <!-- <script src="dist/app/app.js?bust=1456424206"></script> -->
+    <!-- endbuild -->
+
+
+    <script>
+      System.import('app/app');
+    </script>
+
+  </body>
+  </html>

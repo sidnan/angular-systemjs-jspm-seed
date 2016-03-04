@@ -1,0 +1,20 @@
+@import "./jspm_packages/github/twbs/bootstrap@3.3.5/css/bootstrap";
+
+$color-blue: #05079a;
+
+.heading{
+  font-size: 1.8em;
+  font-weight: bold;
+  color: $color-blue;
+}
+
+.my-row {
+    padding-top: 1.5vh;
+}
+
+.col-center-block {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
